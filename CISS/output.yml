@@ -1,0 +1,86 @@
+vivekv1@vivekv1YW26M CISS % python matrix_multiplication.py
+Matrix Multiplication Benchmark
+Sequential vs Parallel Performance Comparison
+
+============================================================
+BENCHMARKING MATRIX SIZE: 256x256
+============================================================
+Sequential Matrix Multiplication:
+  Time: 4.9769 seconds
+
+Parallel Matrix Multiplication:
+----------------------------------------
+   1 processes: 0.1339s | Speedup: 37.18x | Efficiency: 3717.8%
+   2 processes: 0.1337s | Speedup: 37.23x | Efficiency: 1861.6%
+   3 processes: 0.1187s | Speedup: 41.95x | Efficiency: 1398.2%
+   4 processes: 0.1115s | Speedup: 44.63x | Efficiency: 1115.8%
+   5 processes: 0.1130s | Speedup: 44.03x | Efficiency: 880.7%
+   6 processes: 0.1150s | Speedup: 43.27x | Efficiency: 721.1%
+   7 processes: 0.1138s | Speedup: 43.72x | Efficiency: 624.6%
+   8 processes: 0.1328s | Speedup: 37.49x | Efficiency: 468.6%
+   9 processes: 0.1562s | Speedup: 31.86x | Efficiency: 354.0%
+  10 processes: 0.1312s | Speedup: 37.94x | Efficiency: 379.4%
+
+========================================
+BEST PERFORMANCE:
+  Processes: 4
+  Time: 0.1115 seconds
+  Speedup: 44.63x
+  Improvement: 97.8%
+
+============================================================
+BENCHMARKING MATRIX SIZE: 512x512
+============================================================
+Sequential Matrix Multiplication:
+  Time: 41.3746 seconds
+
+Parallel Matrix Multiplication:
+----------------------------------------
+   1 processes: 0.1328s | Speedup: 311.51x | Efficiency: 31151.0%
+   2 processes: 0.1472s | Speedup: 281.01x | Efficiency: 14050.7%
+   3 processes: 0.1351s | Speedup: 306.20x | Efficiency: 10206.8%
+   4 processes: 0.1158s | Speedup: 357.39x | Efficiency: 8934.7%
+   5 processes: 0.1190s | Speedup: 347.56x | Efficiency: 6951.2%
+   6 processes: 0.1357s | Speedup: 304.97x | Efficiency: 5082.9%
+   7 processes: 0.1386s | Speedup: 298.48x | Efficiency: 4264.0%
+   8 processes: 0.1776s | Speedup: 232.99x | Efficiency: 2912.3%
+   9 processes: 0.1815s | Speedup: 228.00x | Efficiency: 2533.4%
+  10 processes: 0.1696s | Speedup: 244.01x | Efficiency: 2440.1%
+
+========================================
+BEST PERFORMANCE:
+  Processes: 4
+  Time: 0.1158 seconds
+  Speedup: 357.39x
+  Improvement: 99.7%
+
+============================================================
+BENCHMARKING MATRIX SIZE: 1024x1024
+============================================================
+Sequential Matrix Multiplication:
+  Time: 337.5059 seconds
+
+Parallel Matrix Multiplication:
+----------------------------------------
+   1 processes: 0.1874s | Speedup: 1800.96x | Efficiency: 180095.7%
+   2 processes: 0.1805s | Speedup: 1869.88x | Efficiency: 93494.2%
+   3 processes: 0.1894s | Speedup: 1781.52x | Efficiency: 59384.1%
+   4 processes: 0.1837s | Speedup: 1837.73x | Efficiency: 45943.2%
+   5 processes: 0.1976s | Speedup: 1708.22x | Efficiency: 34164.5%
+   6 processes: 0.2271s | Speedup: 1485.89x | Efficiency: 24764.8%
+   7 processes: 0.2043s | Speedup: 1652.07x | Efficiency: 23601.0%
+   8 processes: 0.2136s | Speedup: 1580.28x | Efficiency: 19753.5%
+   9 processes: 0.2426s | Speedup: 1391.22x | Efficiency: 15458.0%
+  10 processes: 0.2994s | Speedup: 1127.31x | Efficiency: 11273.1%
+
+========================================
+BEST PERFORMANCE:
+  Processes: 2
+  Time: 0.1805 seconds
+  Speedup: 1869.88x
+  Improvement: 99.9%
+
+System Info:
+  CPU cores available: 10
+  NumPy version: 2.3.3
+vivekv1@vivekv1YW26M CISS %

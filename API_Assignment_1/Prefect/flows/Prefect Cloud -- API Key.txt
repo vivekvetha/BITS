@@ -1,0 +1,15 @@
+1. Create a new API Key in Prefect Cloud
+
+Suppose the API Key is "pnu_RSFVt7NeNbxxnCulvTfZA70iQQTVW13AglLn"
+
+2. Set the key
+setx PREFECT_API_KEY "pnu_RSFVt7NeNbxxnCulvTfZA70iQQTVW13AglLn"
+
+3. Login
+prefect cloud login -k pnu_RSFVt7NeNbxxnCulvTfZA70iQQTVW13AglLn
+
+4. Command to set workspace Id ->
+prefect cloud workspace set --workspace "suresh-g/default"
+
+5. Command to deployment
+prefect deployment run 'main-flow/us-population-ds-workflow'

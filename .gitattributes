@@ -1,0 +1,19 @@
+# Handle line endings consistently across platforms
+* text=auto
+
+# Python files should always use LF
+*.py text eol=lf
+
+# Markdown and config files
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.sh text eol=lf
+
+# Binary files should not be modified
+*.db binary
+*.sqlite binary
+*.sqlite3 binary
+*.bin binary

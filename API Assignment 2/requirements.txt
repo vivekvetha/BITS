@@ -1,0 +1,6 @@
+streamlit
+openai
+newspaper3k
+youtube-transcript-api
+pypdf
+pymupdf
